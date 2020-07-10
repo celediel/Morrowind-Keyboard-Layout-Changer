@@ -16,7 +16,7 @@ Layouts that use letters outside the standard and extended ASCII tables will rem
 
 i.e. Turkish FGĞIOD, Latvian ĄŽERTY
 
-### ! Warning ! Achtung ! Atención !   ###
+### ! Warning ! Achtung ! Atención ! ###
 
 Don't put erroneous data into keys.lua. This mod works by overwriting the data at the memory address that Morrowind reads output text from. Changing the length of the tables could overwrite things you don't want overwritten.
 
