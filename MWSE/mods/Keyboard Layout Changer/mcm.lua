@@ -25,8 +25,9 @@ local function createOptions()
 end
 
 local function applyLayout()
-    tes3.messageBox("Layout changes applied!")
-    common.log("Changing layout to " .. config.keyboardLayout)
+    local message = "Changing layout to " .. config.keyboardLayout
+    tes3.messageBox(message)
+    common.log(message)
     common.changeLayout(keys[config.keyboardLayout])
 end
 
