@@ -28,7 +28,7 @@ local function applyLayout()
     local message = "Changing layout to " .. config.keyboardLayout
     tes3.messageBox(message)
     common.log(message)
-    common.changeLayout(keys[config.keyboardLayout])
+    common.changeLayout(config.keyboardLayout)
 end
 
 local template = mwse.mcm.createTemplate(common.modName)

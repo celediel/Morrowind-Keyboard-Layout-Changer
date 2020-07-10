@@ -14,10 +14,10 @@ this.modInfo = "Allows use of non-qwerty keyboard layouts.\n\nCurrently supporte
 
 function this.log(str) mwse.log("[%s] %s", this.modName, str) end
 
-function this.changeLayout(keys)
+function this.changeLayout(layout)
     -- Thanks NullCascade
-    mwse.memory.writeBytes({address = 0x775148, bytes = keys.lowercase})
-    mwse.memory.writeBytes({address = 0x775248, bytes = keys.uppercase})
+    mwse.memory.writeBytes({address = 0x775148, bytes = keys[layout].lowercase})
+    mwse.memory.writeBytes({address = 0x775248, bytes = keys[layout].uppercase})
 end
 
 return this
