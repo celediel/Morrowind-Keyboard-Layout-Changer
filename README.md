@@ -20,7 +20,11 @@ i.e. Turkish FGĞIOD, Latvian ĄŽERTY
 
 Don't put erroneous data into keys.lua. This mod works by overwriting the data at the memory address that Morrowind reads output text from. Changing the length of the tables could overwrite things you don't want overwritten.
 
+<<<<<<< HEAD
 As of 1.1, changing the length of the tables shouldn't be possible, but as always, garbage in garbage out.
+=======
+As of [33208a9](https://github.com/celediel/Morrowind-Keyboard-Layout-Changer/commit/33208a900d72fa27d08d9d14b08679585d44b4c4), changing the length of the tables shouldn't be possible, but as always, garbage in garbage out.
+>>>>>>> master
 
 ## Requirements ##
 MWSE 2.1 nightly @ [github](https://github.com/MWSE/MWSE)
