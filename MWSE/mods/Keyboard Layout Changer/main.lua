@@ -2,8 +2,9 @@ local common = require("Keyboard Layout Changer.common")
 local config = require("Keyboard Layout Changer.config").getConfig()
 
 local function onInitialized()
-    common.log("Changing layout to " .. config.keyboardLayout)
-    common.changeLayout(config.keyboardLayout)
+    if common.changedLayout(config.keyboardLayout) then
+        common.log("Changed layout to " .. config.keyboardLayout)
+    end
 end
 
 event.register("initialized", onInitialized)

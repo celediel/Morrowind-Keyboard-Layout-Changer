@@ -13,16 +13,19 @@ this.modInfo = "Allows use of non-qwerty keyboard layouts.\n\nCurrently supporte
 
 function this.log(str) mwse.log("[%s] %s", this.modName, str) end
 
-function this.changeLayout(layout)
+function this.changedLayout(layout)
+    local changed = false
     if keys[layout] and (#keys[layout].lowercase == 256 and #keys[layout].uppercase == 256) then
         -- Thanks NullCascade
         mwse.memory.writeBytes({address = 0x775148, bytes = keys[layout].lowercase})
         mwse.memory.writeBytes({address = 0x775248, bytes = keys[layout].uppercase})
+        changed = true
     else
         local message = "Bad keys.lua file, please re-install."
         this.log(message)
         tes3.messageBox(string.format("(%s) %s", this.modName, message))
     end
+    return changed
 end
 
 return this
