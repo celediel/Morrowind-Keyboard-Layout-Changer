@@ -4,9 +4,7 @@ local this = {}
 
 local currentConfig
 
-this.default = {
-    keyboardLayout = "qwerty"
-}
+this.default = {keyboardLayout = "qwerty"}
 
 function this.getConfig()
     currentConfig = currentConfig or mwse.loadConfig(common.configString, this.default)
