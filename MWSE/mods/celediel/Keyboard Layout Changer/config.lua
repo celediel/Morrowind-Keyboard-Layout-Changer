@@ -1,4 +1,4 @@
-local common = require("Keyboard Layout Changer.common")
+local common = require("celediel.Keyboard Layout Changer.common")
 
 local this = {}
 

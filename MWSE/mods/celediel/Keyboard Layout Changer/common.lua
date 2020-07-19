@@ -1,4 +1,4 @@
-local keys = require("Keyboard Layout Changer.keys")
+local keys = require("celediel.Keyboard Layout Changer.keys")
 
 local supportedLayouts = ""
 for name, _ in pairs(keys) do supportedLayouts = supportedLayouts .. name .. " " end

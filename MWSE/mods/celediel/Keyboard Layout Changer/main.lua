@@ -1,5 +1,5 @@
-local common = require("Keyboard Layout Changer.common")
-local config = require("Keyboard Layout Changer.config").getConfig()
+local common = require("celediel.Keyboard Layout Changer.common")
+local config = require("celediel.Keyboard Layout Changer.config").getConfig()
 
 local function onInitialized()
     if common.changedLayout(config.keyboardLayout) then
@@ -10,5 +10,5 @@ end
 event.register("initialized", onInitialized)
 
 event.register("modConfigReady", function()
-    mwse.mcm.register(require("Keyboard Layout Changer.mcm"))
+    mwse.mcm.register(require("celediel.Keyboard Layout Changer.mcm"))
 end)

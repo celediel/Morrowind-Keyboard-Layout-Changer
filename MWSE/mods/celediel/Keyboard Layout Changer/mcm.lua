@@ -1,6 +1,6 @@
-local keys = require("Keyboard Layout Changer.keys")
-local common = require("Keyboard Layout Changer.common")
-local config = require("Keyboard Layout Changer.config").getConfig()
+local keys = require("celediel.Keyboard Layout Changer.keys")
+local common = require("celediel.Keyboard Layout Changer.common")
+local config = require("celediel.Keyboard Layout Changer.config").getConfig()
 
 local restartMessage = "Restart the game or click the Apply button to apply changes."
 
