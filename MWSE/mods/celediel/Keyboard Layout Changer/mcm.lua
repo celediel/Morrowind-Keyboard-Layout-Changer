@@ -25,11 +25,16 @@ local function createOptions()
 end
 
 local function applyLayout()
+    local message = ""
+
     if common.changedLayout(config.keyboardLayout) then
-        local message = "Changed layout to " .. config.keyboardLayout
-        tes3.messageBox(message)
-        common.log(message)
+        message = "Changed layout to " .. config.keyboardLayout
+    else
+        message = "Bad keys.lua file, length must be 256."
     end
+
+    tes3.messageBox(message)
+    common.log(message)
 end
 
 local template = mwse.mcm.createTemplate(common.modName)
